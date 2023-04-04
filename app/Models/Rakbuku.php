@@ -11,7 +11,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Rakbuku extends Model
 {
 
-protected $table = 'rak_buku';
+protected $table = 'rak_bukus';
 
 public function buku(): HasMany{
     return $this->hasMany(Buku::class, 'id_rak_buku', 'id');

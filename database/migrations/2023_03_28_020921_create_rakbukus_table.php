@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('rakbukus', function (Blueprint $table) {
-            $table->id();
+        Schema::create('rak_bukus', function (Blueprint $table) {
+            $table->integer('id')->autoIncrement();
             $table->string('nama');
             $table->string('lokasi');
             $table->string('keterangan')->nullable();
